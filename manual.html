@@ -59,31 +59,30 @@
         <div class="page">
             <div class="page-header">
                 <span class="page-header-doc-title">Keep Talking and Nobody Explodes v. 1</span>
-                <span class="page-header-section-title">Defusing Bombs</span>
+                <span class="page-header-section-title">Desarmering av bomber</span>
             </div>
             <div class="page-footer absolute-footer"></div>
             <div class="page-content">
-                <h1>Defusing Bombs</h1>
+                <h1>Desarmering av bomber</h1>
 
-                <p>A bomb will explode when its countdown timer reaches 0:00 or when too many strikes have been recorded. The only way to defuse a bomb is to disarm all of its modules before its countdown timer expires.</p>
+                <p>En bombe eksploderer når tidtakeren når 0:00, eller når du har gjort for mange tabber ("strikes"). Den eneste måten å stoppe bomben på er å desarmere alle modulene før tiden renner ut.</p>
 
                 <div class="bomb-diagram">
-                    <span class="diagram-label">Example Bomb</span><br />
-                    <table><tr><td><img src="img/Bomb.svg" class="bomb-diagram-front" /><br />Front</td><td><img src="img/BombSide.svg" class="bomb-diagram-side" /><br />Side</td></tr></table>
+                    <span class="diagram-label">Eksempelbombe</span><br />
+                    <table><tr><td><img src="img/Bomb.svg" class="bomb-diagram-front" /><br />Sett fra fronten</td><td><img src="img/BombSide.svg" class="bomb-diagram-side" /><br />Sett fra siden</td></tr></table>
                 </div>
 
-                <h3>Modules</h3>
-                <p>Each bomb will include up to 11 modules that must be disarmed. Each module is discrete and can be disarmed in any order.</p>
-                <p>Instructions for disarming modules can be found in Section 1. "Needy" modules present a special case and are described in Section 2.</p>
+                <h3>Moduler</h3>
+                <p>Hver bombe har opp til 11 moduler som må dearmeres. Hver moduler er uavhengig av de andre, og de kan dearmeres i vilkårlig rekkefølge.</p>
+                <p>Instruksjoner for å uskadeliggjøre moduler finner du i seksjon 1. "Kravstore" moduler er noe for seg selv, og beskrives i seksjon 2.</p>
 
+                <h3>Tabber</h3>
+                <div class="timer-diagram">Tabbeindikator<br /><img src="img/TimerComponent.svg"/></div>
+                <p>Når bombeteknikeren gjør en feil vil tabbeindikatoren (som vises over tidtakeren) fylles opp. Bomber som har tabbeindikatorer eksploderer når du gjør en tredje tabbe, og tidtakeren teller ned raskere om du først har gjort en tabbe.</p>
+                <p>Hvis det ikke er noen tabbeindikator på bomben, betyr det at bomben vil eksplodere første gang du gjør en feil. Vær forsiktig!</p>
 
-                <h3>Strikes</h3>
-                <div class="timer-diagram">Strike Indicator<br /><img src="img/TimerComponent.svg"/></div>
-                <p>When the Defuser makes a mistake the bomb will record a strike which will be displayed on the indicator above the countdown timer. Bombs with a strike indicator will explode upon the third strike. The timer will begin to count down faster after a strike has been recorded.</p>
-                <p>If no strike indicator is present above the countdown timer, the bomb will explode upon the first strike, leaving no room for error.</p>
-
-                <h3>Gathering Information</h3>
-                <p>Some disarming instructions will require specific information about the bomb, such as the serial number. This type of information can typically be found on the top, bottom, or sides of the bomb casing. See Appendix A, B, and C for identification instructions that will be useful in disarming certain modules.</p>
+                <h3>Innhenting av informasjon</h3>
+                <p>Noen ganger trenger ekspertene spesifikk informasjon om bomben for å kunne gi instruksjoner om hvordan den skal desarmeres — for eksempel bombens serienummer. Denne informasjonen finner du vanligvis på bunnen, toppen eller sidene av bombedekselet. Se appendiks A, B eller C for detaljer om hvordan du kan identifisere disse.</p>
             </div>
             <div class="page-footer relative-footer"></div>
         </div>
@@ -92,16 +91,16 @@
         <div class="page section-title">
             <div class="page-header">
                 <span class="page-header-doc-title">Keep Talking and Nobody Explodes v. 1</span>
-                <span class="page-header-section-title">Section 1: Modules</span>
+                <span class="page-header-section-title">Seksjon 1: Moduler</span>
             </div>
             <div class="page-footer absolute-footer"></div>
             <div class="page-content">
                 <div class="vertical-spacer"></div>
                 <img src="img/Component.svg" class="diagram" />
                 <div class="new-block-formatting-context">
-                    <h1>Section 1: Modules</h1>
-                    <p>Modules can be identified by an LED in the top right corner. When this LED is lit green the module has been disarmed.</p>
-                    <p>All modules must be disarmed to defuse the bomb.</p>
+                    <h1>Seksjon 1: Moduler</h1>
+                    <p>Alle moduler har et lys øverst i høyre hjørne. Når dette lyset er grønt, er modulen desarmert.</p>
+                    <p>Alle moduler må desarmeres for å uskadeliggjøre bomben.</p>
                 </div>
             </div>
             <div class="page-footer relative-footer"></div>
@@ -111,24 +110,60 @@
         <div class="page">
             <div class="page-header">
                 <span class="page-header-doc-title">Keep Talking and Nobody Explodes v. 1</span>
-                <span class="page-header-section-title">Wires</span>
+                <span class="page-header-section-title">Ledninger</span>
             </div>
             <div class="page-footer absolute-footer"></div>
             <div class="page-content">
                 <img src="img/WireComponent.svg" class="diagram" />
-                <h2>On the Subject of Wires</h2>
+                <h2>Ledninger</h2>
                 <p class="flavour-text">
-                    Wires are the lifeblood of electronics! Wait, no, electricity is the lifeblood. Wires are more like the arteries. The veins? No matter…</p>
+                    Ledninger er blodet til all elektronikk! Nei, vent. Det er vel elektrisitet som er blodet? Ledninger er vel som blodårer? Eller er det elektronene som er blodet? Samma det…</p>
 
                 <ul>
-                    <li>A wire module can have 3-6 wires on it.</li>
-                    <li>Only the <em>one</em> correct wire needs to be cut to disarm the module.</li>
-
-                    <li>Wire ordering begins with the first on the top.</li>
+                    <li>En ledningsmodul har 3 til 6 ledninger.</li>
+                    <li>Du skal bare kutte <em>en</em> ledning for å desarmere modulen.</li>
+                    <li>Rekkefølgen starter fra toppen.</li>
                 </ul>
 
                 <table>
-                    <tr><td><strong><em>3 wires:</em></strong>	<br />If there are no red wires, cut the second wire.<br />Otherwise, if the last wire is white, cut the last wire.<br />Otherwise, if there is more than one blue wire, cut the last blue wire.<br />Otherwise, cut the last wire.</tr><tr><td><strong><em>4 wires:</em></strong><br />If there is more than one red wire and the last digit of the serial number is odd, cut the last red wire.<br />Otherwise, if the last wire is yellow and there are no red wires, cut the first wire.<br />Otherwise, if there is exactly one blue wire, cut the first wire.<br />Otherwise, if there is more than one yellow wire, cut the last wire.<br />Otherwise, cut the second wire.</tr><tr><td><strong><em>5 wires:</em></strong><br />If the last wire is black and the last digit of the serial number is odd, cut the fourth wire.<br />Otherwise, if there is exactly one red wire and there is more than one yellow wire, cut the first wire.<br />Otherwise, if there are no black wires, cut the second wire.<br />Otherwise, cut the first wire.</tr><tr><td><strong><em>6 wires:</em></strong><br />If there are no yellow wires and the last digit of the serial number is odd, cut the third wire.<br />Otherwise, if there is exactly one yellow wire and there is more than one white wire, cut the fourth wire.<br />Otherwise, if there are no red wires, cut the last wire.<br />Otherwise, cut the fourth wire.</tr>			</table>
+                    <tr>
+                        <td>
+                            <strong><em>3 ledninger:</em></strong><br />
+                            Hvis det ikke er noen røde ledninger, kutt den andre ledningen.<br>
+                            Ellers, om den siste ledningen er hvit, kutt den siste ledningen.<br>
+                            Ellers, om det er mer enn en blå ledning, kutt den siste blå ledningen.<br>
+                            Ellers, kutt den siste ledningen.
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <strong><em>4 ledninger:</em></strong><br />
+                            Hvis det er mer enn en rød ledning og det siste tallet i serienummeret er et oddetall, kutt den siste røde ledningen.<br />
+                            Ellers, hvis den siste ledningen er gul og det ikke er noen røde ledninger, kutt den første ledningen.<br />
+                            Ellers, hvis det er nøytaktig en blå ledning, kutt den første ledningen.<br />
+                            Ellers, hvis det er mer enn en gul ledning, kutt den siste ledningen.<br />
+                            Ellers, kutt den andre ledningen.
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <strong><em>5 ledninger:</em></strong><br />
+                            Hvis den siste ledningen er svart, og det siste tallet i serienummeret er et oddetall, kutt den fjerde ledningen.<br />
+                            Ellers, om det er nøyaktig en rød ledning og det er mer enn en gul ledning, kutt den første ledningen.<br />
+                            Ellers, hvis det ikke er noen svarte ledninger, kutt den andre ledningen.<br />
+                            Ellers, kutt den første ledningen.
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <strong><em>6 ledninger:</em></strong><br />
+                            Hvis det ikke er noen gule ledninger, og det siste tallet i serienummeret er et oddetall, kutt den tredje ledningen.<br />
+                            Ellers, hvis det er nøyaktig en gul ledning og det er mer enn en hvit ledning, kutt den fjerde ledningen.<br />
+                            Ellers, hvis det ikke er noen røde ledninger, kutt den siste ledningen.<br />
+                            Ellers, kutt den fjerde ledningen.
+                    </td>
+                    </tr>
+                </table>
             </div>
             <div class="page-footer relative-footer"></div>
         </div>
