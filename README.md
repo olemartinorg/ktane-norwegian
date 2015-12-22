@@ -7,7 +7,7 @@ Dette prosjektet inneholder kildefilene til en norsk oversetteslse av bombemanua
             Last ned manualen her
         </a>
     </strong>
-    <br>
+    <br><br>
 </div>
 
 Tråden på steam-forumet om de ulike norske oversettelsene, finner dere her:  
