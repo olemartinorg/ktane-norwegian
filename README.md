@@ -7,7 +7,11 @@ Dette prosjektet inneholder kildefilene til en norsk oversetteslse av bombemanua
             Last ned manualen her
         </a>
     </strong>
+    <br>
 </div>
+
+Tråden på steam-forumet om de ulike norske oversettelsene, finner dere her:  
+http://steamcommunity.com/app/341800/discussions/0/485623406961948929/
 
 ## Rettelser
 Om du finner en skrivefeil i manualen, eller har noe annet du vil rette på, lag gjerne et "issue" her på github, eller kontakt meg direkte (du finner kontaktinformasjonen min på bruker-siden min her inne - trykk på "olemartinorg" øverst til venstre).
