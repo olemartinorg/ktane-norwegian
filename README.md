@@ -1,10 +1,12 @@
 # Keep Talking and Nobody Explodes - på norsk!
 Dette prosjektet inneholder kildefilene til en norsk oversetteslse av bombemanualen til Keep Talking and Nobody Explode. Du er sannsynligvis bare ute etter denne knappen:
 
-<div align="center" style="text-align: center; font-size: 2em;">
-    <a href="https://github.com/olemartinorg/ktane-norwegian/raw/master/manual.pdf">
-        Last ned manualen her
-    </a>
+<div align="center" style="text-align: center">
+    <strong>
+        <a href="https://github.com/olemartinorg/ktane-norwegian/raw/master/manual.pdf">
+            Last ned manualen her
+        </a>
+    </strong>
 </div>
 
 ## Rettelser
