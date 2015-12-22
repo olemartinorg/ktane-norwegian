@@ -10,7 +10,7 @@ Dette prosjektet inneholder kildefilene til en norsk oversetteslse av bombemanua
     <br><br>
 </div>
 
-Tråden på steam-forumet om de ulike norske oversettelsene, finner dere her:  
+Tråden på steam-forumet om de ulike norske oversettelsene finner dere her:  
 http://steamcommunity.com/app/341800/discussions/0/485623406961948929/
 
 ## Rettelser
